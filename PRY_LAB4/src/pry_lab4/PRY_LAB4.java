@@ -17,6 +17,13 @@ public class PRY_LAB4 {
     public static void main(String[] args) {
         System.out.println("Hola");
         System.out.println("gagaga");
+        /*
+        control s
+        team
+        add
+        team
+        commit
+         */
     }
     
 }
