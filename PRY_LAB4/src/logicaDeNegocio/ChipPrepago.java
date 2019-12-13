@@ -6,5 +6,10 @@ public class ChipPrepago {
   String numeroTelefono = null;
   int saldo = 0;
   int CODIGO_PAIS = 506;
-  String 
+  String estado = null;
+  int oportunidadesSalvame = 0;
+  int megabytesDisponibles = 0;
+  
+  static int cantidadLineasCreadas = 0;
+  
 }
