@@ -10,5 +10,4 @@ package aplicacion;
  * @author Fabian Navarro
  */
 public class app {
-    
 }
