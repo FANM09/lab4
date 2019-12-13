@@ -12,4 +12,7 @@ public class ChipPrepago {
   
   static int cantidadLineasCreadas = 0;
   
+  public ChipPrepago(){
+  }
+  
 }
