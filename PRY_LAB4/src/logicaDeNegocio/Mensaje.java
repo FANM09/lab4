@@ -27,45 +27,21 @@ public class Mensaje {
         return numeroEmisor;
     }
 
-    public void setNumeroEmisor(String numeroEmisor) {
-        this.numeroEmisor = numeroEmisor;
-    }
-
     public String getNumeroReceptor() {
         return numeroReceptor;
-    }
-
-    public void setNumeroReceptor(String numeroReceptor) {
-        this.numeroReceptor = numeroReceptor;
     }
 
     public String getMensaje() {
         return mensaje;
     }
 
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
-
-    public String getTipoMensaje() {
-        return tipoMensaje;
-    }
-
-    public void setTipoMensaje(String tipoMensaje) {
-        this.tipoMensaje = tipoMensaje;
-    }
-
-    private void setFecha() {
+    public void setFecha() {
         Calendar calendario;
         calendario = Calendar.getInstance();
         fecha = calendario.getTime();
     }
 
-    private String getFecha() {
+    public String getFecha() {
         SimpleDateFormat mascara = new SimpleDateFormat("dd/MM/yy");
         return mascara.format(fecha);
     }
@@ -76,8 +52,11 @@ public class Mensaje {
         return dateFormat.format(date);
     }
 
-    @Override
-    public String toString() {
-        return "Mensaje{" + "mensaje=" + getMensaje() + ", número Destino=" + getNumeroReceptor() + ", fecha=" + getFecha() + ", hora=" + hora + '}';
+    public String imprimirInformarcionMensajesEnviados() {
+        return "Mensaje=" + getMensaje() + ", Número Destino=" + getNumeroReceptor() + ", Fecha=" + getFecha() + ", Hora=" + hora;
+    }
+
+    public String imprimirInformarcionMensajesRecibidos() {
+        return "Mensaje=" + getMensaje() + ", Número Emisor=" + getNumeroReceptor() + ", Fecha=" + getFecha() + ", Hora=" + hora;
     }
 }

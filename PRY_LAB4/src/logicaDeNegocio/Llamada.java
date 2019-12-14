@@ -27,41 +27,21 @@ public class Llamada {
         return duracion;
     }
 
-    public void setDuracion(int duracion) {
-        this.duracion = duracion;
-    }
-
     public String getNumeroEmisor() {
         return numeroEmisor;
-    }
-
-    public void setNumeroEmisor(String numeroEmisor) {
-        this.numeroEmisor = numeroEmisor;
     }
 
     public String getNumeroReceptor() {
         return numeroReceptor;
     }
 
-    public void setNumeroReceptor(String numeroReceptor) {
-        this.numeroReceptor = numeroReceptor;
-    }
-
-    public String getTipoLlamado() {
-        return tipoLlamado;
-    }
-
-    public void setTipoLlamado(String tipoLlamado) {
-        this.tipoLlamado = tipoLlamado;
-    }
-
-    private void setFecha() {
+    public void setFecha() {
         Calendar calendario;
         calendario = Calendar.getInstance();
         fecha = calendario.getTime();
     }
 
-    private String getFecha() {
+    public String getFecha() {
         SimpleDateFormat mascara = new SimpleDateFormat("dd/MM/yy");
         return mascara.format(fecha);
     }
@@ -72,9 +52,12 @@ public class Llamada {
         return dateFormat.format(date);
     }
 
-    @Override
-    public String toString() {
-        return "Llamada{" + "duracion=" + duracion + ", numero=" + numeroEmisor + ", fecha=" + getFecha() + ", hora=" + getHora() + '}';
+    public String imprimirInformarcionLlamadasRecibidas() {
+        return "Duración=" + getDuracion() + ", Número Destino=" + getNumeroEmisor() + ", Fecha=" + getFecha() + ", Hora=" + getHora();
+    }
+
+    public String imprimirInformarcionLlamadasRealizadas() {
+        return "Duración=" + getDuracion() + ", Número Emisor=" + getNumeroEmisor() + ", Fecha=" + getFecha() + ", Hora=" + getHora();
     }
 
 }
