@@ -78,6 +78,6 @@ public class Mensaje {
 
     @Override
     public String toString() {
-        return "Mensaje{" + "numero=" + numeroEmisor + ", mensaje=" + mensaje + ", fecha=" + fecha + ", hora=" + hora + '}';
+        return "Mensaje{" + "mensaje=" + getMensaje() + ", número Destino=" + getNumeroReceptor() + ", fecha=" + getFecha() + ", hora=" + hora + '}';
     }
 }
