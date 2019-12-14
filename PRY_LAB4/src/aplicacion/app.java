@@ -21,5 +21,6 @@ public class app {
         System.out.println(chip1.consultarHistorialMensajes());
         System.out.println(chip1.realizarLlamada(20, "911", chip3));
         System.out.println(chip1.realizarLlamada(10, "88888888", chip2));
+        System.out.println(chip1.realizarLlamada(15, "88888888", chip2));
     }
 }
