@@ -9,9 +9,9 @@ public class app {
         ChipPrepago chip2 = new ChipPrepago("88888888");
         ChipPrepago chip3 = new ChipPrepago("911");
 
-        System.out.println(chip1.activar("Fabián Navarro", 500));
-        System.out.println(chip2.activar("Gerald", 600));
-        System.out.println(chip3.activar("911", 1000));
+        System.out.println(chip1.activarChipPrepago("Fabián Navarro", 500));
+        System.out.println(chip2.activarChipPrepago("Gerald", 600));
+        System.out.println(chip3.activarChipPrepago("911", 1000));
         System.out.println(chip2.enviarMensaje("Hello", "70286975", chip1));
         System.out.println(chip2.enviarMensaje("Hello2", "70286975", chip1));
         System.out.println(chip1.verCantidadSaldo());
